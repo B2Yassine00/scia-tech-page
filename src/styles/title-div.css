@@ -4,7 +4,6 @@
 
 .Nebula{
     background-color: rgb(255, 255, 255);
-    background-image: url(../assets/nebula.png);
 }
 
 .SizeDiv1{
@@ -13,6 +12,7 @@
     margin-left: 10rem;
     margin-right: 10rem;
     background-color: #ffffff;
+    background-image: url(../assets/nebula.png);
 }
 
 .BigTitle{
