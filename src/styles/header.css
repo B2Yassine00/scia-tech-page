@@ -1,0 +1,128 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+  
+  *{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .navigation{
+      background-color: rgb(255, 255, 255);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      /*box-shadow: 0 1px 30px #05668D;*/
+  }
+
+  .navbar {
+      background-color: rgb(255, 255, 255);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999; /* To ensure the navigation stays on top of other elements */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      line-height: 4rem;
+      box-sizing: border-box;
+      color: #05668D;
+      margin-left: 10rem;
+      margin-right: 10rem;
+  }
+  
+  .left h1 {
+      font-size: 2.5rem;
+      cursor: pointer;
+  }
+  
+  .checkBtn {
+      display: none;
+  }
+  
+  #check {
+      display: none;
+  }
+  
+  .checkBtn {
+      cursor: pointer;
+      font-size: 30px;
+      float: right;
+      color: #05668D;
+      line-height: 80px;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+.right ul li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.right ul li a {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.right ul li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.right ul li.contact a {
+    background-color: #05668D;
+    border-radius:100px;
+    color: white;
+    font-weight: 600;
+    margin-left: 15rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+  @media screen and (max-width:1450px) {
+      .navbar{
+        margin-left: 5rem;
+        margin-right: 5rem;
+      }
+      .list {
+          width: 100%;
+          height: 100vh;
+          background-color: #ffffff;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          top: 6rem;
+          left: 100%;
+          transition: all 1s;
+      }
+  
+      #check {
+          display: none;
+      }
+  
+      .checkBtn {
+          display: block;
+      }
+  
+      #check:checked~ul {
+          left: 0%;
+      }
+      .right ul li.contact a {
+        margin-left: 0rem;
+    }
+  
+  }

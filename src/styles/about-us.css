@@ -1,0 +1,21 @@
+.SizeDiv2{
+    height: 100vh;
+    padding-top: 10rem;
+    margin-left: 20rem !important;
+    margin-right: 20rem !important;
+    background-color: #ffffff;
+}
+
+.AboutTitle{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #142F48;
+}
+
+.AboutParagraph{
+    font-size: 1.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 600;
+    color: #142F48; 
+}
