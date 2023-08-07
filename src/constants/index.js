@@ -65,27 +65,35 @@ export const features = [
     },
   ];
 
-// export const experiences = [
-//   {
-//     title: "Seaking Internship",
-//     company_name: " ",
-//     icon: pointinte,
-//     iconBg: "#E6DEDD",
-//     date: "July 2023 - Present",
-//     points: [
-//       "Looking forward to get more experience.",
-//     ],
-//   },
-//   {
-//     title: "Software Engineer Intern",
-//     company_name: "Trésorerie Générale du Royaume",
-//     icon: TGR,
-//     iconBg: "#E6DEDD",
-//     date: "July 2022 - Aug 2022",
-//     points: [
-//       "Worked on building a website at an intermediate level with angular and spring boot frameworks",
-//       "Collaborating with the team to automate the management accounts tracking.",
-//       "Participating in code reviews.",
-//     ],
-//   },
-// ];
+export const experiences = [
+  {
+    title: "Step 1",
+    company_name: " ",
+    icon: "/src/assets/number_1.png",
+    iconBg: "#05668D",
+    date: "July 2023 - Present",
+    points: [
+      "Shop",
+    ],
+  },
+  {
+    title: "Step 2",
+    company_name: " ",
+    icon: "/src/assets/number_2.png",
+    iconBg: "05668D",
+    date: "July 2022 - Aug 2022",
+    points: [
+      "Donwload",
+    ],
+  },
+  {
+    title: "Step 2",
+    company_name: " ",
+    icon: "/src/assets/number_3.png",
+    iconBg: "#05668D",
+    date: "July 2022 - Aug 2022",
+    points: [
+      "Donwload",
+    ],
+  },
+];

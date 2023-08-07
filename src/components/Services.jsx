@@ -42,7 +42,7 @@ const Services = () => {
     return (
         <div className="md:h-screen bg-white lg:bg-services-pattern bg-contain md:bg-cover mb-20 lg:mb-0">
             <motion.div variants={textVariant()}>
-                <h2 className={`${styles.sectionHeadText} text-center mt-10`}>
+                <h2 className={`${styles.sectionHeadText} text-center pt-4 mt-10`}>
                 What We Offer?
                 </h2>
             </motion.div>
