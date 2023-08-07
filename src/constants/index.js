@@ -16,9 +16,14 @@ export const navLinks = [
       title: "Features",
     },
     {
+      id: "steps",
+      title: "Steps",
+    },
+    {
       id: "contact",
       title: "Contact",
     },
+    
   ];
 
 export const services = [
@@ -59,3 +64,28 @@ export const features = [
       image: "/src/assets/feat.png",
     },
   ];
+
+// export const experiences = [
+//   {
+//     title: "Seaking Internship",
+//     company_name: " ",
+//     icon: pointinte,
+//     iconBg: "#E6DEDD",
+//     date: "July 2023 - Present",
+//     points: [
+//       "Looking forward to get more experience.",
+//     ],
+//   },
+//   {
+//     title: "Software Engineer Intern",
+//     company_name: "Trésorerie Générale du Royaume",
+//     icon: TGR,
+//     iconBg: "#E6DEDD",
+//     date: "July 2022 - Aug 2022",
+//     points: [
+//       "Worked on building a website at an intermediate level with angular and spring boot frameworks",
+//       "Collaborating with the team to automate the management accounts tracking.",
+//       "Participating in code reviews.",
+//     ],
+//   },
+// ];

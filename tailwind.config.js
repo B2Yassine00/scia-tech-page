@@ -22,6 +22,7 @@ module.exports = {
         "hero-pattern": "url('/src/assets/nebula.png')",
         "services-pattern": "url('/src/assets/background2.png')",
         "feature-pattern":"url('/src/assets/featuresbackground.png')",
+        "feature-new-pattern":"url('/src/assets/featuresbackground2.png')",
       },
     },
   },
