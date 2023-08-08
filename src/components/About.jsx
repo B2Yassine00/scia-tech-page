@@ -5,9 +5,9 @@ import { textVariant, fadeIn } from "../utils/motion";
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import { useState } from "react";
+import { about, slides } from "../constants";
 
 const About = () => {
-    const slides = [{url: "/src/assets/insole1.jpg"}, {url: '/src/assets/insole2.jpg'}, {url: "/src/assets/insole1.jpg"}];
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const prevSlide = () => {
@@ -32,13 +32,13 @@ const About = () => {
                 <div className="flex flex-col lg:grid lg:grid-cols-2">
                     <div className="">
                         <motion.div variants={textVariant()}>
-                            <h2 className={styles.sectionHeadText}>About Us</h2>
+                            <h2 className={styles.sectionHeadText}>{about.big_title}</h2>
                         </motion.div>
 
                         <motion.p
                             variants={fadeIn("", "", 0.1, 1)}
                             className='mt-4 text-[#05668D] font-light text-left text-[14px] md:text-[32px] max-w-3xl leading-tight'>
-                            Contrary to to to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, Aymane it over 2000 years old. Richard McClintock, a Latin Rabii at Hampden-Sydney College in in Virginia, looked up one of the more obscure Latin Latin Latin .
+                                {about.description}
                         </motion.p>
                     </div>
                     <div className="hidden lg:flex">

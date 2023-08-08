@@ -26,6 +26,18 @@ export const navLinks = [
     
   ];
 
+export const home = {first_text: "Scia-Tech, Your Innovative Sciatica Solution.",
+    second_text:"Your Innovative Sciatica.",
+    third_text: "Unlocking Relief, Empowering lives.",
+  };
+
+export const about = {big_title: "About Us",
+    description: "Contrary to to to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, Aymane it over 2000 years old. Richard McClintock, a Latin Rabii at Hampden-Sydney College in in Virginia, looked up one of the more obscure Latin Latin Latin ."
+  };
+
+export const slides = [{url: "/src/assets/insole1.jpg"}, {url: '/src/assets/insole2.jpg'}, {url: "/src/assets/insole1.jpg"}];
+    
+
 export const services = [
     {
       title: "Cash Back",
@@ -63,11 +75,17 @@ export const features = [
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       image: "/src/assets/feat.png",
     },
+    {
+      name: "feature #4",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      image: "/src/assets/feat.png",
+    },
   ];
 
 export const experiences = [
   {
-    title: "Step 1",
+    title: "Shop",
     company_name: " ",
     icon: "/src/assets/number_1.png",
     iconBg: "#05668D",
@@ -77,7 +95,7 @@ export const experiences = [
     ],
   },
   {
-    title: "Step 2",
+    title: "Download",
     company_name: " ",
     icon: "/src/assets/number_2.png",
     iconBg: "05668D",
@@ -87,7 +105,7 @@ export const experiences = [
     ],
   },
   {
-    title: "Step 2",
+    title: "Connect",
     company_name: " ",
     icon: "/src/assets/number_3.png",
     iconBg: "#05668D",

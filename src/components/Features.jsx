@@ -4,6 +4,14 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { features } from "../constants";
 import { Tilt } from "react-tilt";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 const ProjectCard = ({
     index,
@@ -47,45 +55,57 @@ const Features = () => {
 
     return (
         <div className="md:h-screen bg-[#05668D] bg-contain lg:bg-feature-pattern lg:bg-cover lg:bg-no-repeat mb-20 lg:mb-0">
-            <div className="">
-                <div className="w-[55%] flex justify-center">
-                  <motion.div variants={textVariant()}>
-                      <h2 className={`${styles.sectionHeadText} text-center text-white pt-10`}>
-                      How It Works?
-                      </h2>
-                  </motion.div>
+            <motion.div variants={textVariant()}>
+                <h2 className={`${styles.sectionHeadText} text-center text-white pt-10`}>
+                How It Works?
+                </h2>
+            </motion.div>
+            <div className="container"> 
+                <Swiper
+            effect={'coverflow'}
+            grabCursor={true}
+            centeredSlides={true}
+            loop={true}
+            slidesPerView={'auto'}
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 2.5,
+            }}
+            pagination={{ el: '.swiper-pagination', clickable: true }}
+            navigation={{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+              clickable: true,
+            }}
+            modules={[EffectCoverflow, Pagination, Navigation]}
+            className="swiper_container"
+          >
+            {features.map((feature, index)=>(
+                <SwiperSlide>
+                <div className="div-content border-2 border-white flex items-center">
+                  <img src={feature.image} className="hidden md:flex md:w-48 object-contain" alt="slide_image" />
+                  <div className="flex flex-col gap-5 items-center place-content-start p-4">  
+                    <h3 className="text-white uppercase font-light text-[40px] text-center">{feature.name}</h3>
+                    <p className="mt-2 text-white text-center text-[14px]">{feature.description}</p>
+                  </div>              
                 </div>
-                {/* <div className='mt-10 flex flex-wrap justify-center gap-5'>
-                    {features.map((feature, index) => (
-                    <ProjectCard key={`project-${index}`} index={index} {...feature} />
-                    ))}
-                </div> */}
-              <div className=' flex flex-row flex-wrap justify-center'>
-                  <div class="w-[23%] h-[500px] text-[40px] font-normal text-white bg-transparent border-4 border-white  dark:bg-gray-700 dark:border-gray-600 dark:text-white  text-center">
-                      <button aria-current="true" type="button" class="w-full h-[25%] px-4 py-2 text-white border-b-8 border-white cursor-pointer focus:outline-none dark:bg-gray-800 dark:border-gray-600 hover:bg-gray-100 hover:text-[#05668D]
-                      focus:bg-white focus:text-[#05668D]">
-                          FEATURE #1
-                      </button>
-                      <button type="button" class="w-full h-[25%] px-4 py-2 text-white border-b-4 border-white cursor-pointer focus:outline-none dark:bg-gray-800 dark:border-gray-600 hover:bg-gray-100 hover:text-[#05668D]
-                      focus:bg-white focus:text-[#05668D]">
-                        FEATURE #2
-                      </button>
-                      <button type="button" class="w-full h-[25%] px-4 py-2 text-white border-b-4 border-white cursor-pointer focus:outline-none dark:bg-gray-800 dark:border-gray-600 hover:bg-gray-100 hover:text-[#05668D]
-                      focus:bg-white focus:text-[#05668D]">
-                        FEATURE #3
-                      </button>
-                      <button type="button" class="w-full h-[25%] px-4 py-2 text-white border-white cursor-pointer focus:outline-none dark:bg-gray-800 dark:border-gray-600 hover:bg-gray-100 hover:text-[#05668D]
-                      focus:bg-white focus:text-[#05668D]">
-                        FEATURE #4
-                      </button>
-                  </div>
-                <div className="bg-transparent w-[50%] text-white min-w-[580px] border-b-4 border-r-4 border-t-4 border-white">
-                  <div>
-                    Hello
-                  </div>
-                </div>
+              </SwiperSlide>
+            ))}
+            
+
+            <div className="slider-controler">
+              <div className="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
               </div>
+              <div className="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div className="swiper-pagination"></div>
             </div>
+          </Swiper>
+          </div>              
         </div>
     )
 }

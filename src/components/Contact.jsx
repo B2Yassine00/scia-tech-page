@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import { SpecSectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
-import { slideIn } from "../utils/motion";
+import { fadeIn, slideIn } from "../utils/motion";
 
 const Contact = () => {
     const formRef = useRef();
@@ -66,7 +66,7 @@ const Contact = () => {
     return (
         <div className="h-screen flex justify-center items-center bg-white bg-center bg-cover bg-no-repeat">
                 <motion.div
-                    variants={slideIn("left", "tween", 0.2, 1)}
+                    variants={fadeIn("", "", 0.2, 1)}
                     className='py-8 lg:py-16 px-4 mx-auto max-w-screen-md  xl:mt-8 flex xl:flex-row  overflow-hidden'
                 >
                     <div className="">

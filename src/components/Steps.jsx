@@ -7,7 +7,7 @@ import { experiences } from "../constants";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { SpecSectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
     return (
@@ -29,7 +29,7 @@ const ExperienceCard = ({ experience }) => {
         }
       >
         <div className="flex justify-center items-center">
-          <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+          <h3 className='text-white text-[40px] font-bold'>{experience.title}</h3>
           <p
             className='text-secondary text-[16px] font-semibold'
             style={{ margin: 0 }}
@@ -54,8 +54,8 @@ const ExperienceCard = ({ experience }) => {
 
 const Steps = () => {
     return (
-        <div className="h-screen bg-hero-pattern bg-center bg-cover bg-no-repeat grid grid-cols-2">
-            <div className="flex items-center">
+        <div className="h-screen bg-hero-pattern bg-center bg-cover bg-no-repeat flex-col lg:grid grid-cols-2">
+            <div className="flex items-center h-[70%]">
             <VerticalTimeline lineColor={"#1D455F"}>
           {experiences.map((experience, index) => (
             <ExperienceCard
@@ -65,7 +65,9 @@ const Steps = () => {
           ))}
         </VerticalTimeline>
             </div>
-            <div></div>
+            <motion.div variants={fadeIn("top", "", 0.1, 2)} className="flex justify-center">
+                <img src="/src/assets/phone.svg" className="h-72 lg:h-[70%]" />
+            </motion.div>
         </div>
     )
 }
