@@ -19,40 +19,36 @@ export const navLinks = [
       id: "steps",
       title: "Steps",
     },
-    {
-      id: "contact",
-      title: "Contact",
-    },
     
   ];
 
 export const home = {first_text: "Scia-Tech, Your Innovative Sciatica Solution.",
-    second_text:"Your Innovative Sciatica.",
-    third_text: "Unlocking Relief, Empowering lives.",
+    second_text:"Unlocking Deep Relief,",
+    third_text: "Empowering Vibrant Lives.",
   };
 
 export const about = {big_title: "About Us",
-    description: "Contrary to to to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, Aymane it over 2000 years old. Richard McClintock, a Latin Rabii at Hampden-Sydney College in in Virginia, looked up one of the more obscure Latin Latin Latin ."
+    description: "At SciaTech, we're on a mission to redefine the way sciatic pain is managed. With a team of dedicated experts and innovators, we've created a seamless blend of cutting-edge technology and empathetic care. Our commitment is to provide individuals suffering from sciatic discomfort with smart solutions that not only offer relief but also empower them to take charge of their health journey. Discover a new level of comfort and control with SciaTech."
   };
 
-export const slides = [{url: "/src/assets/insole1.jpg"}, {url: '/src/assets/insole2.jpg'}, {url: "/src/assets/insole1.jpg"}];
+export const slides = [{url: "/src/assets/insole1.jpg"}, {url: '/src/assets/insole2.jpg'}, {url: "/src/assets/insole3.png"}];
     
 
 export const services = [
     {
-      title: "Cash Back",
+      title: "Advanced Sciatic Pain Management",
       icon: "/src/assets/cashBack.png",
-      description: "Hello my name is Lorem Ipsum",
+      description: "Utilize our smart insoles equipped with AI and IoT technology to actively manage and alleviate sciatic pain.",
     },
     {
-      title: "Cash Back",
+      title: "Real-Time Insights & Guidance",
       icon: "/src/assets/cashBack.png",
-      description: "Hello my name is Lorem Ipsum",
+      description: "Receive tailored advice for managing sciatic discomfort, addressing your unique needs.",
     },
     {
-      title: "Membership",
+      title: "Personalized Care at Your Feet",
       icon: "/src/assets/membership.png",
-      description: "Hello my name is Lorem Ipsum",
+      description: "Experience personalized sciatic wellness with real-time insights and tailored lifestyle recommendations.",
     },
   ];
 
@@ -86,6 +82,7 @@ export const features = [
 export const experiences = [
   {
     title: "Shop",
+    description: "Explore our curated collection designed to relieve foot pain and enhance your lifestyle.",
     company_name: " ",
     icon: "/src/assets/number_1.png",
     iconBg: "#05668D",
@@ -96,6 +93,7 @@ export const experiences = [
   },
   {
     title: "Download",
+    description: "Get our app for seamless browsing and personalized recommendations, right at your fingertips.",
     company_name: " ",
     icon: "/src/assets/number_2.png",
     iconBg: "05668D",
@@ -106,6 +104,7 @@ export const experiences = [
   },
   {
     title: "Connect",
+    description: "Sync your insoles with our app for a new level of personalization.",
     company_name: " ",
     icon: "/src/assets/number_3.png",
     iconBg: "#05668D",
