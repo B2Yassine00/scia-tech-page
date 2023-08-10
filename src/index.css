@@ -6,6 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   margin: 0;
   padding: 0;
@@ -14,18 +15,6 @@
   scroll-behavior: smooth;
   color-scheme: inherit;
 }
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: white !important;
-  font-size: 24px !important;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #05668d !important; 
-}
-
 
 .hash-span {
   color: transparent;
@@ -52,7 +41,7 @@
   background: #05668D; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #007cad,
+    #05668D,
     #002a3b
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
@@ -60,6 +49,87 @@
     #05668D,
     #002a3b
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.violet-gradient {
+  background: #804dee;
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #804dee 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
+.green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.orange-text-gradient {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* canvas- styles */
@@ -200,37 +270,12 @@
   width: 480px;
   height: 350px;
   border-radius: 2rem;
-  padding-left: 0.5rem;
+  object-fit: contain;
 }
 
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right {
   display: none;
-}
-
-.featureDesc{
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-@media (max-width: 760px) {
-  .slider-controler .swiper-button-prev,
-  .slider-controler .swiper-button-next {
-    display: none;
-  }
-  .featureName{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 1.8rem;
-  }
-  .featureDesc{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 1rem;
-  }
-  .div-content{
-    width: 280px !important;
-  }
 }
 
 .slider-controler {
@@ -250,23 +295,6 @@
   .slider-controler .swiper-button-next {
     left: 70% !important;
     transform: translateX(-70%) !important;
-  }
-}
-
-.imageC{
-  width: 22rem !important;
-  height: 45rem !important;
-}
-
-@media (max-width: 1450px) {
-  .phone{
-    display: None !important;
-  }
-  .timeline{
-    padding-right: 3rem;
-    padding-top: 0rem !important;
-    margin-top: 0rem !important;
-    grid-column: 1 / span 12 !important;
   }
 }
 

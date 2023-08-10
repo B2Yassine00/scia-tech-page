@@ -1,7 +1,7 @@
 import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+    VerticalTimeline,
+    VerticalTimelineElement,
+  } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 import { experiences } from "../constants";
 import "react-vertical-timeline-component/style.min.css";
@@ -10,81 +10,66 @@ import { SpecSectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
-  return (
-    <VerticalTimelineElement
-      contentStyle={{
-        background: "#05668D",
-        color: "#FFFFFF", // Changed text color to white
-        paddingLeft: "20px", // Added left padding
-      }}
-      contentArrowStyle={{ borderRight: "3px solid  #05668D" }}
-      iconStyle={{ background: "#05668D", color: "#05668D" }}
-      icon={
-        <div className='flex justify-center items-center w-full h-full'>
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            alt={experience.description}
-            className='w-[70%] h-[70%] object-contain'
-          />
-        </div>
-      }
-    >
-      <div className="flex justify-center items-center flex-col"> 
-        <h3 className='text-white text-[35px]'> 
-          {experience.title}
-        </h3>
-        <h3 className='text-[#bebebe] text-[20px] pl-4 pr-4 pt-2 text-align text-justify '> 
-          {experience.description}
-        </h3>
-        <p
-          className='text-secondary text-[16px] font-medium' 
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </p>
-      </div>
-
-      {/* <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+    return (
+      <VerticalTimelineElement
+        contentStyle={{
+          background: "#05668D",
+          color: "#05668D",
+        }}
+        contentArrowStyle={{ borderRight: "7px solid  #05668D" }}
+        iconStyle={{ background: "#05668D", color: "#05668D" }}
+        icon={
+          <div className='flex justify-center items-center w-full h-full'>
+            <img
+              src={experience.icon}
+              alt={experience.company_name}
+              className='w-[100%] h-[100%] object-contain'
+            />
+          </div>
+        }
+      >
+        <div className="flex justify-center items-center">
+          <h3 className='text-white text-[40px] font-bold'>{experience.title}</h3>
+          <p
+            className='text-secondary text-[16px] font-semibold'
+            style={{ margin: 0 }}
           >
-            {point}
-          </li>
-        ))}
-      </ul> */}
-    </VerticalTimelineElement>
-  );
-};
+            {experience.company_name}
+          </p>
+        </div>
+  
+        {/* <ul className='mt-5 list-disc ml-5 space-y-2'>
+          {experience.points.map((point, index) => (
+            <li
+              key={`experience-point-${index}`}
+              className='text-white-100 text-[14px] pl-1 tracking-wider'
+            >
+              {point}
+            </li>
+          ))}
+        </ul> */}
+      </VerticalTimelineElement>
+    );
+  };
 
 const Steps = () => {
-  return (
-    <div className="h-screen bg-hero-pattern bg-center bg-cover bg-no-repeat">
-      <h2 className={`${styles.sectionHeadText} text-center text-[1D455F] pt-10`}>
-        Next steps?
-      </h2>
-      <br />
-      <div className="flex justify-center lg:grid lg:grid-cols-12">
-        <div className="flex justify-center timeline md:col-span-9 flex items-center ml-20">
-          <VerticalTimeline lineColor={"#1D455F"}>
-            {experiences.map((experience, index) => (
-              <ExperienceCard
-                key={`experience-${index}`}
-                experience={experience}
-              />
-            ))}
-          </VerticalTimeline>
+    return (
+        <div className="h-screen bg-hero-pattern bg-center bg-cover bg-no-repeat flex-col lg:grid grid-cols-2">
+            <div className="flex items-center h-[70%]">
+            <VerticalTimeline lineColor={"#1D455F"}>
+          {experiences.map((experience, index) => (
+            <ExperienceCard
+              key={`experience-${index}`}
+              experience={experience}
+            />
+          ))}
+        </VerticalTimeline>
+            </div>
+            <motion.div variants={fadeIn("top", "", 0.1, 2)} className="flex justify-center">
+                <img src="/src/assets/phone.svg" className="h-72 lg:h-[70%]" />
+            </motion.div>
         </div>
-        <motion.div variants={fadeIn("top", "", 0.1, 2)} className="phone lg:col-span-3 hidden lg:block">
-          <div className="mt-0">
-            <img src="/src/assets/mobile-hand.png" className=" imageC h-5 lg:h-[13%] pt-10" />
-          </div>
-        </motion.div>
-      </div>
-    </div>
-  );
-};
+    )
+}
 
-export default SpecSectionWrapper(Steps, "steps");
+export default SpecSectionWrapper(Steps,"steps");
