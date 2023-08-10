@@ -4,7 +4,7 @@ const Footer = () => {
             <footer className="bg-custom-blue text-center text-white dark:bg-neutral-600">
             <center>
             <div className="container pt-9">
-                <div className="mb-9 flex justify-center items-center">
+                <div className="mb-6 mt-6 flex justify-center items-center">
                 <a href="https://www.facebook.com/rabii.alaoui.73/" target="_blank" className="mr-9 text-neutral-800 dark:text-neutral-200 text-white">
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -38,10 +38,10 @@ const Footer = () => {
                 </div>
             </div>
             <div
-                className="bg-[#E6F2F5] p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
+                className="bg-[#E6F2F5] p-2 text-center text-neutral-500">
                 © 2023 Copyright : 
                 <a
-                className="text-neutral-800 dark:text-neutral-400"
+                className="text-center text-neutral-500"
                 href="https://tailwind-elements.com/"
                 > Scia-Tech</a
                 >
