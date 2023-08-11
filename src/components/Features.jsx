@@ -17,10 +17,10 @@ const Features = () => {
   const firstFourFeatures = features.slice(0, 4);
 
   return (
-    <div className=" h-screen bg-[#01425c] bg-contain lg:bg-feature-pattern lg:bg-cover lg:bg-no-repeat mb-30 lg:mb-0">
+    <div className=" h-screen bg-[#01425c] bg-contain lg:bg-feature-pattern lg:bg-cover lg:bg-no-repeat lg:mb-0">
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionHeadText} text-center text-white`}>
-          <p className="pt-44">How It Works?</p>
+          <p className="pt-14">How It Works?</p>
         </h2>
       </motion.div>
       <div className="container"> 

@@ -28,7 +28,7 @@ const About = () => {
 
     return (
         <>
-            <div className="h-screen pt-40">
+            <div className="h-screen pt-0">
                 <div className="flex flex-col lg:grid lg:grid-cols-2">
                     <div className="">
                         <motion.div variants={textVariant()}>
@@ -37,12 +37,12 @@ const About = () => {
 
                         <motion.p
                             variants={fadeIn("", "", 0.1, 1)}
-                            className='mt-4 text-[#05668D] font-light text-left text-[28px] md:text-[32px] max-w-3xl leading-tight text-justify text-align'>
+                            className='mt-4 text-[#05668D] font-light text-left text-[18px] md:text-[27px] max-w-3xl leading-tight text-justify text-align'>
                                 {about.description}
                         </motion.p>
                     </div>
                     <div className="hidden lg:flex">
-                        <div className='max-w-[800px] h-full w-[80%] m-auto py-16 px-4 relative group'>
+                        <div className='max-w-[800px] h-full w-[80%] m-auto py-20 px-20 relative group'>
                             <div
                                 style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
                                 className='w-full h-full rounded-2xl bg-center bg-contain bg-no-repeat duration-500'

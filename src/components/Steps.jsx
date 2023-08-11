@@ -14,8 +14,11 @@ const ExperienceCard = ({ experience }) => {
     <VerticalTimelineElement
       contentStyle={{
         background: "#05668D",
-        color: "#FFFFFF", // Changed text color to white
-        paddingLeft: "20px", // Added left padding
+        color: "#FFFFFF", 
+        paddingLeft: "2rem", 
+        paddingRight: "2rem",
+        paddingTop: "0.75rem",
+        paddingBottom: "0.75rem"
       }}
       contentArrowStyle={{ borderRight: "3px solid  #05668D" }}
       iconStyle={{ background: "#05668D", color: "#05668D" }}
@@ -24,25 +27,15 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            alt={experience.description}
             className='w-[70%] h-[70%] object-contain'
           />
         </div>
       }
     >
       <div className="flex justify-center items-center flex-col"> 
-        <h3 className='text-white text-[35px]'> 
+        <h3 className='text-white text-[25px]'> 
           {experience.title}
         </h3>
-        <h3 className='text-[#bebebe] text-[20px] pl-4 pr-4 pt-2 text-align text-justify '> 
-          {experience.description}
-        </h3>
-        <p
-          className='text-secondary text-[16px] font-medium' 
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </p>
       </div>
 
       {/* <ul className='mt-5 list-disc ml-5 space-y-2'>
@@ -63,7 +56,7 @@ const Steps = () => {
   return (
     <div className="h-screen bg-hero-pattern bg-center bg-cover bg-no-repeat">
       <h2 className={`${styles.sectionHeadText} text-center text-[1D455F] pt-10`}>
-        Next steps?
+        Next Steps?
       </h2>
       <br />
       <div className="flex justify-center lg:grid lg:grid-cols-12">

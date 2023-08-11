@@ -28,7 +28,7 @@ export const home = {first_text: "Scia-Tech, Your Innovative Sciatica Solution."
   };
 
 export const about = {big_title: "About Us",
-    description: "At SciaTech, we're on a mission to redefine the way sciatic pain is managed. With a team of dedicated experts and innovators, we've created a seamless blend of cutting-edge technology and empathetic care. Our commitment is to provide individuals suffering from sciatic discomfort with smart solutions that not only offer relief but also empower them to take charge of their health journey. Discover a new level of comfort and control with SciaTech."
+    description: "At SciaTech, we're on a mission to redefine the way sciatica pain is managed. With a team of dedicated experts, we've created a seamless blend of cutting-edge technology and empathetic care. Our commitment is to provide individuals suffering from sciatica discomfort with smart solutions that not only offer relief but also empower them to take charge of their health journey. Discover a new level of comfort with SciaTech."
   };
 
 export const slides = [{url: "/src/assets/insole1.jpg"}, {url: '/src/assets/insole2.jpg'}, {url: "/src/assets/insole3.png"}];
@@ -43,7 +43,7 @@ export const services = [
     {
       title: "Real-Time Insights & Guidance",
       icon: "/src/assets/cashBack.png",
-      description: "Receive tailored advice for managing sciatic discomfort, addressing your unique needs.",
+      description: "Receive tailored advice for managing sciatic discomfort, specifically addressing your unique needs.",
     },
     {
       title: "Personalized Care at Your Feet",

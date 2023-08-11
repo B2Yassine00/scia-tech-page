@@ -254,8 +254,8 @@
 }
 
 .imageC{
-  width: 22rem !important;
-  height: 45rem !important;
+  width: 17rem !important;
+  height: 35rem !important;
 }
 
 @media (max-width: 1450px) {
@@ -263,7 +263,7 @@
     display: None !important;
   }
   .timeline{
-    padding-right: 3rem;
+    padding-right: 5rem;
     padding-top: 0rem !important;
     margin-top: 0rem !important;
     grid-column: 1 / span 12 !important;

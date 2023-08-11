@@ -6,7 +6,7 @@ import { Tilt } from "react-tilt";
 import { services } from "../constants";
 
 const ServiceCard = ({ index, title, icon, description }) => (
-    <Tilt className='xs:w-[450px] w-full'>
+    <Tilt className='xs:w-[350px] w-full'>
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         className='w-full bg-transparent p-[1px] rounded-[60px] shadow-2xl'
@@ -29,7 +29,7 @@ const ServiceCard = ({ index, title, icon, description }) => (
             {title}
           </h3>
 
-          <h3 className='text-[#05668D] text-[20px] mt-8 font-normal text-center w-[120%] pl-8 pr-8 text-justify text-interword'>
+          <h3 className='text-[#05668D] text-[20px] mt-2 font-normal text-center w-[120%] pl-8 pr-8 text-justify text-interword'>
             {description}
           </h3>
 
@@ -40,14 +40,14 @@ const ServiceCard = ({ index, title, icon, description }) => (
 
 const Services = () => {
     return (
-        <div className="md:h-screen bg-white lg:bg-services-pattern bg-contain md:bg-cover mb-20 lg:mb-0 pt-36 ml-6 mr-6 ">
+        <div className="md:h-screen bg-white lg:bg-services-pattern bg-contain md:bg-cover lg:mb-0 pt-10 ml-6 mr-6 ">
             <motion.div variants={textVariant()}>
-                <h2 className={`${styles.sectionHeadText} text-center pt-4 mt-10`}>
+                <h2 className={`${styles.sectionHeadText} text-center mt-10`}>
                   What We Offer?
                 </h2>
             </motion.div>
 
-            <div className='mt-20 flex flex-wrap justify-center gap-10'>
+            <div className='mt-10 flex flex-wrap justify-center gap-10'>
                 {services.map((service, index) => (
                 <ServiceCard key={service.title} index={index} {...service} />
                 ))}
