@@ -1,4 +1,5 @@
 import { SectionWrapper, SpecSectionWrapper } from "../hoc";
+import footHero from "/src/assets/footHero.png";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { home } from "../constants";
@@ -21,7 +22,7 @@ const Hero = () => {
                           </button>
                         </div>
                     </div>
-                    <img src="/src/assets/footHero.png" alt="foot" className="hidden lg:flex mt-[-10rem] w-full" />
+                    <img src={footHero} alt="foot" className="hidden lg:flex mt-[-10rem] w-full" />
                 </div>
             </div>
             <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-start'>

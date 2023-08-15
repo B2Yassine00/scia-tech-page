@@ -1,4 +1,6 @@
-
+import logo from "/src/assets/logo.png";
+import close from "/src/assets/close.svg";
+import menu from "/src/assets/menu.svg";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
@@ -35,7 +37,7 @@ const Navbar = () => {
                         setActive("");
                         window.scrollTo(0, 0);
                     }}>
-                    <img src="/dist/assets/logo.png" className='w-28 object-contain' />
+                    <img src={logo} className='w-28 object-contain' />
                 </Link>
                 <ul className='list-none hidden md:flex flex-row gap-10'>
                     {navLinks.map((nav) => (
@@ -54,7 +56,7 @@ const Navbar = () => {
 
             <div className='md:hidden flex flex-1 justify-end items-center'>
             <img
-                src={toggle ? "/src/assets/close.svg" : "/src/assets/menu.svg"}
+                src={toggle ? close : menu}
                 alt='menu'
                 className='w-[28px] h-[28px] object-contain fill-[#05668D] mr-8'
                 onClick={() => setToggle(!toggle)}
