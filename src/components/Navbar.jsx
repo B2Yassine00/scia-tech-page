@@ -35,7 +35,7 @@ const Navbar = () => {
                         setActive("");
                         window.scrollTo(0, 0);
                     }}>
-                    <img src="/src/assets/logo.png" className='w-28 object-contain' />
+                    <img src="/dist/assets/logo.png" className='w-28 object-contain' />
                 </Link>
                 <ul className='list-none hidden md:flex flex-row gap-10'>
                     {navLinks.map((nav) => (
