@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { SpecSectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import phone from "/src/assets/phone.svg";
 
 const ExperienceCard = ({ experience }) => {
     return (
@@ -66,7 +67,7 @@ const Steps = () => {
         </VerticalTimeline>
             </div>
             <motion.div variants={fadeIn("top", "", 0.1, 2)} className="flex justify-center">
-                <img src="/src/assets/phone.svg" className="h-72 lg:h-[70%]" />
+                <img src={phone} className="h-72 lg:h-[70%]" />
             </motion.div>
         </div>
     )

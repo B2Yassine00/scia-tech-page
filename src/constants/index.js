@@ -6,7 +6,6 @@ import number_2 from "/src/assets/number_2.png";
 import number_3 from "/src/assets/number_3.png";
 import insole1 from "/src/assets/insole1.jpg";
 import insole2 from "/src/assets/insole2.jpg";
-import insole3 from "/src/assets/insole3.jpg";
 
 export const navLinks = [
     {
@@ -45,7 +44,11 @@ export const about = {big_title: "About Us",
     description: "Contrary to to to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, Aymane it over 2000 years old. Richard McClintock, a Latin Rabii at Hampden-Sydney College in in Virginia, looked up one of the more obscure Latin Latin Latin ."
   };
 
-export const slides = [{url: insole1}, {url: insole2}, {url: insole3}];
+export const slides = [
+    {url: insole1}, 
+    {url: insole2}, 
+    {url: insole2}
+  ];
     
 
 export const services = [
