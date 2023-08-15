@@ -53,7 +53,7 @@ const Features = () => {
                     scale: 1,
                     speed: 450,
                   }}>
-                    <div className="div-content border-2 border-white flex items-center">
+                    <div className="div-content bg-feature-pattern flex items-center shadow-2xl">
                       <img src={feature.image} className="hidden md:flex md:w-48 object-contain" alt="slide_image" />
                       <div className="flex flex-col gap-5 items-center place-content-start p-4">  
                         <h3 className="text-white uppercase font-light text-[40px] text-center">{feature.name}</h3>
