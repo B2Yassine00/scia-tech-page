@@ -75,6 +75,7 @@ const Features = () => {
                       <p className="featureDesc m-2 text-white text-center text-[14px]">
                         {feature.description}
                       </p>
+
                     </div>
                   </div>
                 </Tilt>

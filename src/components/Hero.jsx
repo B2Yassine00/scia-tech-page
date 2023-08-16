@@ -1,4 +1,5 @@
 import { SectionWrapper, SpecSectionWrapper } from "../hoc";
+import footHero from "/src/assets/footHero.png";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { home } from "../constants";
@@ -14,6 +15,7 @@ const Hero = () => {
                         <h3 className="mt-4 text-[1.5rem] font-bold text-[#142F48]">{home.second_text}</h3>
                         <h3 className=" text-[1.5rem] font-bold text-[#142F48]">{home.third_text}</h3>
                         <div className="flex justify-center lg:block">
+                        
                         <a href="#steps">
                           <br />
                           <button className="bg-[#05668D] border-4 border-transparent hover:border-[#05668D] hover:bg-white hover:text-[#05668D] mt-4 items-center flex gap-5 text-white font-semibold text-2xl pl-10 py-2 pr-5 rounded-[150px] text-center hover:svg-fill-[#05668D]">
@@ -24,6 +26,7 @@ const Hero = () => {
                                 fill="currentColor"
                               />
                             </svg>
+
                           </button>
                         </a>
                         </div>

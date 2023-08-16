@@ -8,11 +8,13 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { SpecSectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+
 import playstore from "../assets/playstore.png";
 import appstore from "../assets/appstore.png";
 import arrow from "../assets/Arrow-Down.gif";
 import mobile from "/src/assets/mobile-hand.png";
 import React, { useState } from 'react';
+
 
 function ExperienceAccordion({ experience, playstore, appstore }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -87,6 +89,7 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Steps = () => {
+
   return (
     <div className="h-screen bg-hero-pattern bg-center bg-cover bg-no-repeat">
       <h2 className={`${styles.sectionHeadText} text-center text-[1D455F] pt-10`}>
@@ -103,6 +106,7 @@ const Steps = () => {
               />
             ))}
           </VerticalTimeline>
+
         </div>
         <motion.div variants={fadeIn("top", "", 0.1, 2)} className="phone lg:col-span-3 hidden lg:block">
           <div className="mt-0">
