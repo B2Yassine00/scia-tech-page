@@ -1,11 +1,17 @@
-import feat from "/src/assets/feat.png";
-import cashback from "/src/assets/cashBack.png";
-import membership from "/src/assets/membership.png";
-import number_1 from "/src/assets/number_1.png";
-import number_2 from "/src/assets/number_2.png";
-import number_3 from "/src/assets/number_3.png";
+
+import pain from "/src/assets/back-pain.png";
+import time from "/src/assets/time-management.png";
+import care from "/src/assets/charity.png";
 import insole1 from "/src/assets/insole1.jpg";
 import insole2 from "/src/assets/insole2.jpg";
+import insole3 from "/src/assets/insole3.png";
+import insole from "/src/assets/feat.png";
+import one from "/src/assets/number_1.png";
+import two from "/src/assets/number_2.png";
+import three from "/src/assets/number_3.png";
+import appstore from "/src/assets/appstore.png";
+import playstore from "/src/assets/playstore.png";
+
 
 export const navLinks = [
     {
@@ -28,79 +34,77 @@ export const navLinks = [
       id: "steps",
       title: "Steps",
     },
-    {
-      id: "contact",
-      title: "Contact",
-    },
     
   ];
 
-export const home = {first_text: "Scia-Tech, Your Innovative Sciatica Solution.",
-    second_text:"Your Innovative Sciatica.",
-    third_text: "Unlocking Relief, Empowering lives.",
+export const home = {first_text: "Scia-Tech, Unlock Comfort, Embrace your Life.",
+    second_text:"Every Step Towards,",
+    third_text: " Sciatica Freedom.",
   };
 
 export const about = {big_title: "About Us",
-    description: "Contrary to to to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, Aymane it over 2000 years old. Richard McClintock, a Latin Rabii at Hampden-Sydney College in in Virginia, looked up one of the more obscure Latin Latin Latin ."
+    description: "At SciaTech, we're on a mission to redefine the way sciatica pain is managed. With a team of dedicated experts, creating a seamless blend of cutting-edge technology and care. Our commitment is to provide individuals suffering from sciatica discomfort with smart solutions that not only offer relief but also empower them to take charge of their health."
   };
 
-export const slides = [
-    {url: insole1}, 
-    {url: insole2}, 
-    {url: insole2}
-  ];
+
+export const slides = [{url: insole1}, {url: insole2}, {url: insole3}];
+
     
 
 export const services = [
     {
-      title: "Cash Back",
-      icon: cashback,
-      description: "Hello my name is Lorem Ipsum",
+
+      title: "Advanced Sciatic Pain Management",
+      icon: pain,
+      description: "Utilize our smart insoles equipped with AI and IoT technology to actively manage and alleviate sciatic pain.",
     },
     {
-      title: "Cash Back",
-      icon: cashback,
-      description: "Hello my name is Lorem Ipsum",
+      title: "Real-Time Insights & Guidance",
+      icon: time,
+      description: "Receive tailored advice for managing sciatic discomfort, specifically addressing your unique needs.",
     },
     {
-      title: "Membership",
-      icon: membership,
-      description: "Hello my name is Lorem Ipsum",
+      title: "Personalized Care at Your Feet",
+      icon: care,
+      description: "Experience personalized sciatic wellness with real-time insights and tailored lifestyle recommendations.",
+
     },
   ];
 
 export const features = [
     {
-      name: "feature #1",
+
+      name: "Real-Time Tracking",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      image: feat,
+        "The insole utilizes advanced sensors to monitor your posture and movements in real time, providing valuable insights into activities that may trigger sciatic pain.",
+      image: insole,
+
     },
     {
-      name: "feature #2",
+      name: "Pain Prediction",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      image: feat,
+
+        "By analyzing your posture and activities, the insole predicts potential pain triggers, allowing you to make informed decisions to prevent discomfort before it starts.",
+      image: insole,
+
     },
     {
-      name: "feature #3",
+      name: "Battery Life",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      image: feat,
-    },
-    {
-      name: "feature #4",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      image: feat,
+        "Ensure the insoles have a durable and long-lasting battery life, allowing users to rely on them throughout the day without frequent charging.",
+      image: insole,
+
     },
   ];
 
 export const experiences = [
   {
     title: "Shop",
+    description: "Explore our curated collection designed to relieve foot pain and enhance your lifestyle.",
     company_name: " ",
-    icon: number_1,
+
+    icon: one,
+
     iconBg: "#05668D",
     date: "July 2023 - Present",
     points: [
@@ -109,8 +113,12 @@ export const experiences = [
   },
   {
     title: "Download",
+    description: "Get our app for seamless browsing and personalized recommendations, right at your fingertips.",
     company_name: " ",
-    icon: number_2,
+    image1: playstore,
+    image2: appstore,
+    icon: two,
+
     iconBg: "05668D",
     date: "July 2022 - Aug 2022",
     points: [
@@ -119,8 +127,9 @@ export const experiences = [
   },
   {
     title: "Connect",
+    description: "Sync your insoles with our app for a new level of personalization.",
     company_name: " ",
-    icon: number_3,
+    icon: three,
     iconBg: "#05668D",
     date: "July 2022 - Aug 2022",
     points: [
