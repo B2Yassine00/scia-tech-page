@@ -5,6 +5,8 @@ import { textVariant } from "../utils/motion";
 import { features } from "../constants";
 import { Tilt } from "react-tilt";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import leftarr from "/src/assets/left-arrow.png";
+import rightarr from "/src/assets/right-arrow.png";
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -25,6 +27,7 @@ const Features = () => {
       </motion.div>
       <div className="container"> 
         <Swiper
+          initialSlide={1}
           effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
@@ -69,7 +72,7 @@ const Features = () => {
                       <h3 className="featureName text-white uppercase font-light text-[40px] text-center">
                         {feature.name}
                       </h3>
-                      <p className="featureDesc mt-2 text-white text-center text-[14px]">
+                      <p className="featureDesc m-2 text-white text-center text-[14px]">
                         {feature.description}
                       </p>
                     </div>
@@ -83,12 +86,12 @@ const Features = () => {
           <div className="slider-controler">
             {/* Left Arrow */}
             <div className="swiper-button-prev slider-arrow">
-              <img src="/src/assets/left-arrow.png" alt="Left Arrow" />
+              <img src={leftarr} alt="Left Arrow" />
             </div>
 
             {/* Right Arrow */}
             <div className="swiper-button-next slider-arrow">
-              <img src="/src/assets/right-arrow.png" alt="Right Arrow" />
+              <img src={rightarr} alt="Right Arrow" />
             </div>
             <div className="swiper-pagination"></div>
           </div>

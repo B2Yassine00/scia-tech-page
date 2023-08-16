@@ -2,6 +2,7 @@ import { SectionWrapper, SpecSectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { home } from "../constants";
+import foot from "../assets/footHero.png";
 
 const Hero = () => {
     return (
@@ -9,7 +10,7 @@ const Hero = () => {
             <div className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-col items-start`}>
                 <div className="grid lg:grid-cols-2 lg:overflow-visible">
                     <div className="lg:w-[130%] text-center lg:text-left">
-                        <h1 className="text-[3rem] md:text-[4rem] leading-tight font-extrabold text-[#142F48]">{home.first_text}</h1>
+                        <h1 className="text-[3rem] md:text-[4rem] pr-4 leading-tight font-extrabold text-[#142F48]">{home.first_text}</h1>
                         <h3 className="mt-4 text-[1.5rem] font-bold text-[#142F48]">{home.second_text}</h3>
                         <h3 className=" text-[1.5rem] font-bold text-[#142F48]">{home.third_text}</h3>
                         <div className="flex justify-center lg:block">
@@ -27,7 +28,7 @@ const Hero = () => {
                         </a>
                         </div>
                     </div>
-                    <img src="/src/assets/footHero.png" alt="foot" className="hidden lg:flex mt-[-10rem] w-full" />
+                    <img src={foot} alt="foot" className="hidden lg:flex mt-[-10rem] w-full" />
                 </div>
             </div>
             <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-start'>

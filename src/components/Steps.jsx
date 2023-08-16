@@ -8,6 +8,43 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { SpecSectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import playstore from "../assets/playstore.png";
+import appstore from "../assets/appstore.png";
+import arrow from "../assets/Arrow-Down.gif";
+import mobile from "/src/assets/mobile-hand.png";
+import React, { useState } from 'react';
+
+function ExperienceAccordion({ experience, playstore, appstore }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div className="flex justify-center items-center flex-col rounded-lg" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+      <h3 className="text-white text-25px p-0 m-0">
+        {experience.title}
+      </h3>
+      {experience.title === "Download" && !isHovered && (
+        <div className="tooltip text-black">
+          <img src={arrow} alt="Arrow Icon" width="50rem"/>
+        </div>
+      )}
+      {experience.title === "Download" && isHovered && (
+        <div className="grid grid-cols-12">
+          <div className="col-span-6 p-4 text-white flex items-center">
+            <a href="https://play.google.com/store/games" target="_blank" rel="noopener noreferrer">
+              <img src={playstore} width="30rem" alt="Play Store"/>
+            </a>
+          </div>
+          <div className="col-span-6 p-4 flex items-center">
+            <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+              <img src={appstore} width="30rem" alt="App Store"/>
+            </a>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -17,10 +54,11 @@ const ExperienceCard = ({ experience }) => {
         color: "#FFFFFF", 
         paddingLeft: "2rem", 
         paddingRight: "2rem",
-        paddingTop: "0.75rem",
-        paddingBottom: "0.75rem"
+        paddingTop: "0.5rem",
+        paddingBottom: "0.5rem",
+        borderRadius: "3rem",
       }}
-      contentArrowStyle={{ borderRight: "3px solid  #05668D" }}
+      contentArrowStyle={{ borderRight: "0px solid  #05668D", paddingTop: "0.5rem"}}
       iconStyle={{ background: "#05668D", color: "#05668D" }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
@@ -32,11 +70,7 @@ const ExperienceCard = ({ experience }) => {
         </div>
       }
     >
-      <div className="flex justify-center items-center flex-col"> 
-        <h3 className='text-white text-[25px]'> 
-          {experience.title}
-        </h3>
-      </div>
+    <ExperienceAccordion experience={experience} playstore={playstore} appstore={appstore} />
 
       {/* <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
@@ -72,7 +106,7 @@ const Steps = () => {
         </div>
         <motion.div variants={fadeIn("top", "", 0.1, 2)} className="phone lg:col-span-3 hidden lg:block">
           <div className="mt-0">
-            <img src="/src/assets/mobile-hand.png" className=" imageC h-5 lg:h-[13%] pt-10" />
+            <img src={mobile} className=" imageC h-5 lg:h-[12%] pt-10" />
           </div>
         </motion.div>
       </div>

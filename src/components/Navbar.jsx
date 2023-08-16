@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
+import logo from "../assets/logo.png";
+import menu from "../assets/menu.svg";
+import close from "../assets/close.svg";
 
 const Navbar = () => {
     const [active, setActive] = useState("");
@@ -33,7 +36,7 @@ const Navbar = () => {
                         setActive("");
                         window.scrollTo(0, 0);
                     }}>
-                    <img src="/src/assets/logo.png" className='w-28 object-contain' />
+                    <img src={logo} className='w-28 object-contain' />
                 </Link>
                 <ul className='list-none hidden md:flex flex-row gap-10'>
                     {navLinks.map((nav) => (
@@ -50,7 +53,7 @@ const Navbar = () => {
                 </ul>    
             <div className='md:hidden flex flex-1 justify-end items-center'>
             <img
-                src={toggle ? "/src/assets/close.svg" : "/src/assets/menu.svg"}
+                src={toggle ? close : menu}
                 alt='menu'
                 className='w-[28px] h-[28px] object-contain fill-[#05668D] mr-8'
                 onClick={() => setToggle(!toggle)}
