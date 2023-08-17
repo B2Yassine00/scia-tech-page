@@ -32,8 +32,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_s5fbygl',
-        'template_vu7v6j4',
+          ${{secrets.EMAIL_JS_SECRET_SERVICE}},
+          ${{secrets.EMAIL_JS_SECRET_TEMPLATE}},
         {
           from_name: form.name,
           to_name: "Yassine Banouq",
@@ -41,7 +41,7 @@ const Contact = () => {
           to_email: ${{secrets.EMAILTO}},
           message: form.message,
         },
-        'SZbBEfYlJ3wOLc3de'
+        ${{secrets.EMAIL_JS_SECRET_KEY}}
       )
       .then(
         () => {
