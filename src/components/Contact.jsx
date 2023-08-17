@@ -32,16 +32,16 @@ const Contact = () => {
 
     emailjs
       .send(
-          ${{secrets.EMAIL_JS_SECRET_SERVICE}},
-          ${{secrets.EMAIL_JS_SECRET_TEMPLATE}},
+          $EMAIL_JS_SECRET_SERVICE,
+          $EMAIL_JS_SECRET_TEMPLATE,
         {
           from_name: form.name,
           to_name: "Yassine Banouq",
           from_email: form.email,
-          to_email: ${{secrets.EMAILTO}},
+          to_email: $EMAILTO,
           message: form.message,
         },
-        ${{secrets.EMAIL_JS_SECRET_KEY}}
+        $EMAIL_JS_SECRET_KEY
       )
       .then(
         () => {
