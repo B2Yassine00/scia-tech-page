@@ -32,13 +32,13 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_s5fbygl',
-        'template_vu7v6j4',
+          'service_s5fbygl',
+          'template_vu7v6j4',
         {
           from_name: form.name,
           to_name: "Yassine Banouq",
           from_email: form.email,
-          to_email: "banouq90@gmail.com",
+          to_email: 'banouq90@gmail.com',
           message: form.message,
         },
         'SZbBEfYlJ3wOLc3de'
