@@ -1,6 +1,3 @@
-import logo from "/src/assets/logo.png";
-import close from "/src/assets/close.svg";
-import menu from "/src/assets/menu.svg";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";

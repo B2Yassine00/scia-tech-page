@@ -1,5 +1,4 @@
 import { SectionWrapper, SpecSectionWrapper } from "../hoc";
-import footHero from "/src/assets/footHero.png";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { home } from "../constants";
