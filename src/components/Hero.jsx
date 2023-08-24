@@ -17,7 +17,7 @@ const Hero = () => {
                         
                         <a href="#steps">
                           <br />
-                          <button className="bg-[#05668D] border-4 border-transparent hover:border-[#05668D] hover:bg-white hover:text-[#05668D] mt-4 items-center flex gap-5 text-white font-semibold text-2xl pl-10 py-2 pr-5 rounded-[150px] text-center hover:svg-fill-[#05668D]">
+                          <button className="bg-[#05668D] border-4 border-transparent hover:border-[#05668D] hover:bg-white hover:text-[#05668D] mt-4 items-center flex gap-5 text-white font-semibold text-2xl pl-10 py-2 pr-5 rounded-[150px] text-center hover:svg-fill-[#05668D] transition-all ease-out duration-300">
                             Get Started
                             <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -33,23 +33,23 @@ const Hero = () => {
                     <img src={foot} alt="foot" className="hidden lg:flex mt-[-10rem] w-full" />
                 </div>
             </div>
-            <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-start'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-[#05668D] flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-[#05668D] mb-1'
-            />
+            <div className='absolute bottom-10 w-full flex justify-center items-start'>
+            <a href='#about'>
+              <div className='w-[35px] h-[64px] rounded-3xl border-4 border-[#05668D] flex justify-center items-start p-2'>
+                <motion.div
+                  animate={{
+                    y: [0, 24, 0],
+                  }}
+                  transition={{
+                    duration: 1.5,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                  }}
+                  className='w-3 h-3 rounded-full bg-[#05668D] mb-1'
+                />
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
     </section>
     )
 }
