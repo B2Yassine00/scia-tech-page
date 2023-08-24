@@ -169,8 +169,7 @@
 }
 
 .swiper_container {
-  height: 80%;
-  padding: 2rem 0;
+  height: 60%;
   position: relative;
 }
 
@@ -235,7 +234,7 @@
 
 .slider-controler {
   position: relative;
-  bottom: 2rem;
+  bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;

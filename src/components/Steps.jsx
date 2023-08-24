@@ -98,16 +98,16 @@ const Steps = () => {
       <div className="flex justify-center h-full">
         <div className="justify-center timeline flex flex-col md:place-content-center items-center ml-20">
           <div>
-            <p className="font-extrabold text-[32px] text-[#05668D]">COMPLETE YOUR JOURNEY BY</p>
-            <p className="font-extrabold text-[75px] leading-snug">Following three <br /> Simple Steps</p>
-            <p className="font-light text-[28px] mt-4">Download, Register, Experience: Your Journey <br /> to Our App in Three Simple Steps!</p>
+            <p className="font-extrabold text-[1.05rem] md:text-[32px] text-[#05668D]">COMPLETE YOUR JOURNEY BY</p>
+            <p className="font-extrabold text-[2.10rem] md:text-[75px] leading-snug">Following three <br /> Simple Steps</p>
+            <p className="font-light text-[0.70rem] md:text-[28px] mt-4">Download, Register, Experience: Your Journey <br /> to Our App in Three Simple Steps!</p>
           </div>
-          <div className="flex mt-4 gap-6">
-            <button className="bg-[#05668D] border-4 border-transparent hover:border-[#05668D] hover:bg-white hover:text-[#05668D] mt-4 items-center flex gap-5 text-white font-semibold text-[26px] px-10 py-4 rounded-[150px] text-center hover:svg-fill-[#05668D]">
+          <div className="md:flex mt-4 gap-6">
+            <button className="bg-[#05668D] border-4 border-transparent hover:border-[#05668D] hover:bg-white hover:text-[#05668D] mt-4 items-center justify-center flex gap-5 text-white font-semibold text-[26px] px-12 md:px-10 py-4 rounded-[150px] text-center hover:svg-fill-[#05668D]">
               Download
               <img src={play_store} alt="" />
             </button>
-            <button className="bg-[#05668D] border-4 border-transparent hover:border-[#05668D] hover:bg-white hover:text-[#05668D] mt-4 items-center flex gap-5 text-white font-semibold text-[26px] px-10 py-4 rounded-[150px] text-center hover:svg-fill-[#05668D]">
+            <button className="bg-[#05668D] border-4 border-transparent hover:border-[#05668D] hover:bg-white hover:text-[#05668D] mt-4 items-center justify-center flex gap-5 text-white font-semibold text-[26px] px-12 md:px-10 py-4 rounded-[150px] text-center hover:svg-fill-[#05668D]">
               Download
               <img src={app_store} alt="" />
             </button>

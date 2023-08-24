@@ -21,8 +21,8 @@ const Features = () => {
   return (
     <div className=" h-screen bg-[#01425c] bg-contain lg:bg-feature-pattern lg:bg-cover lg:bg-no-repeat lg:mb-0">
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} text-center text-white`}>
-          <p className="pt-14">How It Works?</p>
+        <h2 className={`font-extrabold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[4rem] text-center text-white`}>
+          <p className="pt-3 md:pt-14">How It Works?</p>
         </h2>
       </motion.div>
       <div className="container"> 
@@ -46,7 +46,7 @@ const Features = () => {
             clickable: true,
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
-          className="swiper_container"
+          className="swiper_container md:py-8"
         >
           <Swiper
             slidesPerView={1}
@@ -99,9 +99,7 @@ const Features = () => {
         </Swiper>
       </div>   
       {/* Small text for swipe instruction */}
-      <p className="text-white text-center md:hidden">
-        Swipe with your finger to see more features
-      </p>           
+                
     </div>
   );
 };
