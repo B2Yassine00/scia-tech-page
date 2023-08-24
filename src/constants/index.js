@@ -43,7 +43,7 @@ export const home = {first_text: "Scia-Tech, Unlock Comfort, Embrace your Life."
   };
 
 export const about = {big_title: "About Us",
-    description: "At SciaTech, we're on a mission to redefine the way sciatica pain is managed. With a team of dedicated experts, creating a seamless blend of cutting-edge technology and care. Our commitment is to provide individuals suffering from sciatica discomfort with smart solutions that not only offer relief but also empower them to take charge of their health."
+    description: "At SciaTech, we're on a mission to redefine the way sciatica pain is managed. We are dedicated to providing individuals suffering from sciatica discomfort with smart solutions that not only offer relief but also empower them to take charge of their health journey."
   };
 
 
@@ -71,31 +71,27 @@ export const services = [
     },
   ];
 
-export const features = [
+  export const features = [
     {
-
-      name: "Real-Time Tracking",
+      name: "Predictive Pain",
       description:
-        "The insole utilizes advanced sensors to monitor your posture and movements in real time, providing valuable insights into activities that may trigger sciatic pain.",
+        "We predict discomfort before it starts, no time to lose.",
       image: insole,
-
     },
     {
-      name: "Pain Prediction",
+      name: "Instant Insight",
       description:
-
-        "By analyzing your posture and activities, the insole predicts potential pain triggers, allowing you to make informed decisions to prevent discomfort before it starts.",
-      image: insole,
-
-    },
+        "	Our sensors and AI watch your actions, signaling pain cues.",
+        image: insole,
+      },
     {
-      name: "Battery Life",
+      name: "Tailored Tips",
       description:
-        "Ensure the insoles have a durable and long-lasting battery life, allowing users to rely on them throughout the day without frequent charging.",
+        "Our smart tech learns from your patterns, advice for your way.",
       image: insole,
-
     },
-  ];
+    
+       ];
 
 export const experiences = [
   {

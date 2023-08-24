@@ -12,7 +12,9 @@ import { fadeIn, textVariant } from "../utils/motion";
 import playstore from "../assets/playstore.png";
 import appstore from "../assets/appstore.png";
 import arrow from "../assets/Arrow-Down.gif";
-import mobile from "/src/assets/mobile-hand.png";
+import mobile from "/src/assets/mockupphone.svg";
+import app_store from "/src/assets/app_store.svg";
+import play_store from "/src/assets/play_store.svg";
 import React, { useState } from 'react';
 
 
@@ -91,26 +93,29 @@ const ExperienceCard = ({ experience }) => {
 const Steps = () => {
 
   return (
-    <div className="h-screen bg-hero-pattern bg-center bg-cover bg-no-repeat">
-      <h2 className={`${styles.sectionHeadText} text-center text-[1D455F] pt-10`}>
-        Next Steps?
-      </h2>
-      <br />
-      <div className="flex justify-center lg:grid lg:grid-cols-12">
-        <div className="flex justify-center timeline md:col-span-9 flex items-center ml-20">
-          <VerticalTimeline lineColor={"#1D455F"}>
-            {experiences.map((experience, index) => (
-              <ExperienceCard
-                key={`experience-${index}`}
-                experience={experience}
-              />
-            ))}
-          </VerticalTimeline>
-
+    <div className="h-screen bg-hero-pattern bg-center bg-cover bg-no-repeat flex items-end justify-center">
+      
+      <div className="flex justify-center h-full">
+        <div className="justify-center timeline flex flex-col md:place-content-center items-center ml-20">
+          <div>
+            <p className="font-extrabold text-[32px] text-[#05668D]">COMPLETE YOUR JOURNEY BY</p>
+            <p className="font-extrabold text-[75px] leading-snug">Following three <br /> Simple Steps</p>
+            <p className="font-light text-[28px] mt-4">Download, Register, Experience: Your Journey <br /> to Our App in Three Simple Steps!</p>
+          </div>
+          <div className="flex mt-4 gap-6">
+            <button className="bg-[#05668D] border-4 border-transparent hover:border-[#05668D] hover:bg-white hover:text-[#05668D] mt-4 items-center flex gap-5 text-white font-semibold text-[26px] px-10 py-4 rounded-[150px] text-center hover:svg-fill-[#05668D]">
+              Download
+              <img src={play_store} alt="" />
+            </button>
+            <button className="bg-[#05668D] border-4 border-transparent hover:border-[#05668D] hover:bg-white hover:text-[#05668D] mt-4 items-center flex gap-5 text-white font-semibold text-[26px] px-10 py-4 rounded-[150px] text-center hover:svg-fill-[#05668D]">
+              Download
+              <img src={app_store} alt="" />
+            </button>
+          </div>
         </div>
-        <motion.div variants={fadeIn("top", "", 0.1, 2)} className="phone lg:col-span-3 hidden lg:block">
-          <div className="mt-0">
-            <img src={mobile} className=" imageC h-5 lg:h-[12%] pt-10" />
+        <motion.div variants={fadeIn("top", "", 0.1, 2)} className="h-full phone lg:col-span-3 hidden lg:block">
+          <div className="mt-0 h-full flex items-end">
+            <img src={mobile} className=" imageC h-5 lg:h-[12%] mb-2" />
           </div>
         </motion.div>
       </div>

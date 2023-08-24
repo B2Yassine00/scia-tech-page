@@ -68,11 +68,11 @@ const Features = () => {
                       className="hidden md:flex md:w-48 object-contain"
                       alt="slide_image"
                     />
-                    <div className="flex flex-col gap-5 items-center place-content-start p-4">
-                      <h3 className="featureName text-white uppercase font-light text-[40px] text-center">
+                    <div className="flex flex-col gap-8 items-center place-content-start p-4">
+                      <h3 className="featureName text-white uppercase font-normal text-[30px] text-center">
                         {feature.name}
                       </h3>
-                      <p className="featureDesc m-2 text-white text-center text-[14px]">
+                      <p className="featureDesc m-2 text-white font-extralight text-justify text-[18px]">
                         {feature.description}
                       </p>
 

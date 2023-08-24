@@ -209,7 +209,7 @@
 }
 
 .featureDesc{
-  text-align: justify;
+  text-align: center;
   text-justify: inter-word;
 }
 
@@ -254,8 +254,8 @@
 }
 
 .imageC{
-  width: 14rem !important;
-  height: 30rem !important;
+  width: 35rem !important;
+  height: 37rem !important;
 }
 
 @media (max-width: 1450px) {
