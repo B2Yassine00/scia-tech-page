@@ -32,7 +32,7 @@ const GoUpButton = () => {
     <div
       className={`fixed bottom-12 right-10 ${
         showButton ? "block" : "hidden"
-      } cursor-pointer`}
+      } cursor-pointer go-up-button-container`}
       onClick={scrollToTop}
     >
       <FaArrowCircleUp size={60} color="#1388b6" />

@@ -12,18 +12,18 @@ import GoUpButton from "./components/GoUpButton"; // Import the GoUpButton compo
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-white'>
+      <div className="relative z-0 bg-white">
         <Navbar />
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Hero />
         </div>
-        <About className='h-screen' />
+        <About className="h-screen" />
         <Services />
         <Features />
         <Steps />
         <Contact />
         <Footer />
-        <GoUpButton /> 
+        <GoUpButton />
       </div>
     </BrowserRouter>
   );

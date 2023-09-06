@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,6 +15,10 @@
   color-scheme: inherit;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: white !important;
@@ -23,9 +27,8 @@
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: #05668d !important; 
+  color: #05668d !important;
 }
-
 
 .hash-span {
   color: transparent;
@@ -49,7 +52,7 @@
 }
 
 .our-color-gradient {
-  background: #05668D; /* fallback for old browsers */
+  background: #05668d; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #007cad,
@@ -57,7 +60,7 @@
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #05668D,
+    #05668d,
     #002a3b
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -152,7 +155,7 @@
 }
 
 .bg-custom-blue {
-  background-color: #05668D;
+  background-color: #05668d;
 }
 
 .container {
@@ -207,7 +210,7 @@
   display: none;
 }
 
-.featureDesc{
+.featureDesc {
   text-align: center;
   text-justify: inter-word;
 }
@@ -217,17 +220,17 @@
   .slider-controler .swiper-button-next {
     display: none;
   }
-  .featureName{
+  .featureName {
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 1.8rem;
   }
-  .featureDesc{
+  .featureDesc {
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 1rem;
   }
-  .div-content{
+  .div-content {
     width: 280px !important;
   }
 }
@@ -252,16 +255,16 @@
   }
 }
 
-.imageC{
+.imageC {
   width: 35rem !important;
   height: 37rem !important;
 }
 
 @media (max-width: 1450px) {
-  .phone{
+  .phone {
     display: None !important;
   }
-  .timeline{
+  .timeline {
     padding-right: 5rem;
     padding-top: 0rem !important;
     margin-top: 0rem !important;
@@ -306,7 +309,7 @@
 }
 
 .slider-controler .slider-arrow::after {
-  content: '';
+  content: "";
 }
 
 .swiper-pagination {
@@ -321,6 +324,11 @@
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-  background: var(--primary,white);
+  background: var(--primary, white);
 }
 
+@media (max-width: 768px) {
+  .go-up-button-container {
+    display: none;
+  }
+}
