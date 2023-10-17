@@ -5,10 +5,28 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Earth = () => {
-  const earth = useGLTF("./planet/scene.gltf");
+  const earth = useGLTF("./somila/somila.gltf");
 
   return (
-    <primitive object={earth.scene} scale={3} position-y={0} rotation-y={0} />
+    <mesh>
+      <hemisphereLight intensity={1} />
+      <spotLight
+        position={[0, 0, 0]}
+        angle={0}
+        penumbra={1}
+        intensity={1}
+        castShadow
+        shadow-mapSize={1024}
+      />
+      <pointLight intensity={3} />
+      <primitive
+        object={earth.scene}
+        scale={0.015}
+        position={[0, 2, 0]}
+        rotation={[-7, 0, 0]}
+      />
+      <pointLight intensity={3} />
+    </mesh>
   );
 };
 
@@ -29,6 +47,7 @@ const EarthCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
+          autoRotateSpeed={5.0}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}

@@ -4,6 +4,7 @@ import { SectionWrapper } from "../hoc";
 import { textVariant, fadeIn } from "../utils/motion";
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
+import { EarthCanvas } from "./canvas";
 import { useState } from "react";
 import { about, slides } from "../constants";
 
@@ -41,17 +42,16 @@ const About = () => {
                             {about.description}
                         </motion.p>
                     </div>
-                    <div className="hidden lg:flex w-[100%]">
-                        <div className=' max-w-[1000px] min-h-[400px] h-full w-[100%] -mt-10 m-auto px-20 relative group'>
+                    <div className="hidden lg:flex w-[100%] h-[540px]">
+                        <EarthCanvas />
+                        {/* <div className=' max-w-[1000px] min-h-[400px] h-full w-[100%] -mt-10 m-auto px-20 relative group'>
                             <div
                                 style={{ backgroundImage: `url(${slides[currentIndex].url}` }}
                                 className='w-full h-full rounded-2xl bg-center bg-cover bg-no-repeat duration-500'
                             ></div>
-                            {/* Left Arrow */}
                             <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-[#05668D] text-white cursor-pointer'>
                                 <BsChevronCompactLeft onClick={prevSlide} size={30} />
                             </div>
-                            {/* Right Arrow */}
 
                             <div className='group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-[#05668D] text-white cursor-pointer'>
                                 <BsChevronCompactRight onClick={nextSlide} size={30} />
@@ -68,7 +68,7 @@ const About = () => {
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

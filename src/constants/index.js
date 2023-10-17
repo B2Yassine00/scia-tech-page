@@ -43,7 +43,7 @@ export const home = {first_text: "Scia-Tech, Unlock Comfort, Embrace your Life."
   };
 
 export const about = {big_title: "About Us",
-    description: "At SciaTech, we're on a mission to redefine the way sciatica pain is managed. We are dedicated to providing individuals suffering from sciatica discomfort with smart solutions that not only offer relief but also empower them to take charge of their health journey."
+    description: "At SciaTech, we are driven by a steadfast mission to completely transform the way sciatica pain is managed. Our unwavering dedication is rooted in providing individuals who grapple with the discomfort of sciatica not just with mere relief, but with intelligent and comprehensive solutions. Our commitment goes beyond alleviating pain – we aim to empower these individuals to actively participate in their own health journey. We believe in equipping them with the tools, resources, and knowledge necessary to take charge of their well-being, ultimately enabling a higher quality of life."
   };
 
 
